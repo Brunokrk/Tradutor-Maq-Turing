@@ -9,4 +9,7 @@ class Edge():
         self.direction = edgeVector[3]
         self.newState = edgeVector[4]
 
+    def __str__ (self):
+        return str(self.actState) + " " + str(self.actSymbol) + " " + str(self.newSymbol) + " " +str(self.direction) + " " + str(self.newState)+ "\n"
+
     
