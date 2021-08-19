@@ -98,15 +98,3 @@ if __name__ == '__main__':
         lines.append(item.__str__())
     
     output.writelines(lines)
-
-
-    
-
-
-
-
-
-
-    
-
-
