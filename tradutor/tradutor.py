@@ -44,13 +44,11 @@ def printEdges(vector):
 def blankSpacesTreatment(vector):
     """Função utilizada para tratamento dos espaços brancos"""
 
-    #Note: problemas para finalizar execução
-
-
     for item in vector:
         if item.newSymbol == '_':
             item.newSymbol = 't'
             item.allFnc[2] = 't'
+    
     
     return vector
 
@@ -64,6 +62,8 @@ def addAuxTransition(vector, actualState, alphabet):
     for item in alphabet:
         newEdgeA = edg.Edge([stateA, item, item, 'l', actualState.newState])
         vector.append(newEdgeA)
+
+    vector = blankSpacesTreatment(vector)
 
     return vector
 
