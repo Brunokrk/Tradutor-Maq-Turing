@@ -1,0 +1,19 @@
+O Trabalho foi desenvolvido em Python 3.8.3, porém qualquer versão após a 3 deve funcionar normalmente
+
+Para instalar, segue link:
+https://www.python.org/downloads/
+
+Para execução, basta navegar até a pasta "tradutor", e executar o seguinte comando:
+
+python tradutor.py
+
+
+Nas linhas 85 e 86 estão o caminho dos arquivos in e out
+
+Repositório GitHub:
+https://github.com/Brunokrk/Tradutor-Maq-Turing
+
+
+
+
+

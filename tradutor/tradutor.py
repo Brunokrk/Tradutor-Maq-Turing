@@ -46,8 +46,8 @@ def blankSpacesTreatment(vector):
 
     for item in vector:
         if item.newSymbol == '_':
-            item.newSymbol = 't'
-            item.allFnc[2] = 't'
+            item.newSymbol = '§'
+            item.allFnc[2] = '§'
     
     
     return vector
@@ -82,7 +82,8 @@ def stationaryMovements(vector, alphabet):
 
 if __name__ == '__main__':
 
-    input = open('input\\inputs.in','r')
+    input = open('tradutor\\inputs.in','r')
+    output= open('tradutor\\output.out', 'w')
     allEdges = catchingEdges(input)
     allEdges = blankSpacesTreatment(allEdges)
     alphabet = alphabetRecognizing(allEdges)
@@ -90,11 +91,10 @@ if __name__ == '__main__':
     #printEdges(allEdges)
     input.close()
 
-    output= open('output\\output.out', 'w')
-
-
     lines = list()
     for item in allEdges:
         lines.append(item.__str__())
     
     output.writelines(lines)
+
+    output.close()
